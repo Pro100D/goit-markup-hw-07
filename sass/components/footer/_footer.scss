@@ -1,0 +1,17 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	&--fon {
+		background-color: #2f303a;
+	}
+
+	&__container {
+		@extend %container;
+	}
+
+	&__content {
+		display: flex;
+		align-items: baseline;
+	}
+}

@@ -1,0 +1,23 @@
+.logo {
+	color: black;
+
+	font-family: raleway, cursive;
+
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
+
+	margin-right: 93px;
+
+	&__icon {
+		color: $accentColor;
+	}
+    &--white{
+        color: $whiteColor;
+    }
+}
+

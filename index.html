@@ -13,25 +13,25 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
 	</head>
 	<body>
 		<!-- Шапка сайта -->
 		<header class="header header--line">
-			<div class="header__nav container">
-				<nav class="header__nav">
+			<div class="header__nav ">
+				<nav class="main__nav">
 					<a href="./index.html" class="logo">
 						<span class="logo__icon">Web</span>
 						Studio
 					</a>
-					<ul class="site-nav list">
+					<ul class="site-nav ">
 						<li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студія</a></li>
 						<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
 						<li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
 					</ul>
 				</nav>
 				<div class="aside">
-					<ul class="aside-nav list">
+					<ul class="aside-nav">
 						<li class="aside-nav__item">
 							<a href="mailto:info@devstudio.com" class="aside-nav__link">
 								<svg class="aside-nav__icon" width="16px" height="12px">
@@ -55,7 +55,7 @@
 		<main>
 			<!-- Главная тема компании  -->
 			<section class="hero">
-				<div class="container">
+				<div class="hero-block">
 					<h1 class="hero__title">
 						Ефективні рішення для
 						<br />
@@ -66,85 +66,77 @@
 			</section>
 			<!-- Плюсы компании -->
 			<section class="feature">
-				<div class="container">
-					<h2 class="section-title visually-hidden">Особливості компанії</h2>
-					<ul class="feature-list list">
-						<li class="feature-list__item">
-							<div class="feature-list feature-list__icon--fon">
-								<svg class="feature-list__icon">
-									<use href="./imeges/symbol-defs.svg#icon-antenna-1"></use>
-								</svg>
-							</div>
-							<h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="feature-list__text">
-								Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-							</p>
-						</li>
-						<li class="feature-list__item">
-							<div class="feature-list feature-list__icon--fon">
-								<svg class="feature-list__icon">
-									<use href="./imeges/symbol-defs.svg#icon-clock-1"></use>
-								</svg>
-							</div>
-							<h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="feature-list__text">
-								Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-							</p>
-						</li>
-						<li class="feature-list__item">
-							<div class="feature-list feature-list__icon--fon">
-								<svg class="feature-list__icon">
-									<use href="./imeges/symbol-defs.svg#icon-diagram-1"></use>
-								</svg>
-							</div>
-							<h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
-							<p class="feature-list__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-						</li>
-						<li class="feature-list__item">
-							<div class="feature-list feature-list__icon--fon">
-								<svg class="feature-list__icon">
-									<use href="./imeges/symbol-defs.svg#icon-astronaut-1"></use>
-								</svg>
-							</div>
-							<h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="feature-list__text">
-								Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-							</p>
-						</li>
-					</ul>
-				</div>
+				<h2 class="feature-title">Особливості компанії</h2>
+				<ul class="feature-list">
+					<li class="feature-list__item">
+						<div class="feature-list feature-list__icon--fon">
+							<svg class="feature-list__icon">
+								<use href="./imeges/symbol-defs.svg#icon-antenna-1"></use>
+							</svg>
+						</div>
+						<h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+						<p class="feature-list__text">
+							Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+						</p>
+					</li>
+					<li class="feature-list__item">
+						<div class="feature-list feature-list__icon--fon">
+							<svg class="feature-list__icon">
+								<use href="./imeges/symbol-defs.svg#icon-clock-1"></use>
+							</svg>
+						</div>
+						<h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
+						<p class="feature-list__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+					</li>
+					<li class="feature-list__item">
+						<div class="feature-list feature-list__icon--fon">
+							<svg class="feature-list__icon">
+								<use href="./imeges/symbol-defs.svg#icon-diagram-1"></use>
+							</svg>
+						</div>
+						<h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
+						<p class="feature-list__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+					</li>
+					<li class="feature-list__item">
+						<div class="feature-list feature-list__icon--fon">
+							<svg class="feature-list__icon">
+								<use href="./imeges/symbol-defs.svg#icon-astronaut-1"></use>
+							</svg>
+						</div>
+						<h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+						<p class="feature-list__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+					</li>
+				</ul>
 			</section>
 			<!-- Область работы компании -->
-			<section class="work">
-				<div class="container">
-					<h2 class="section-title">Чим ми займаємося</h2>
-					<ul class="work-list list">
-						<li class="work-list__item">
-							<img src="./imeges/Foto1.png" alt="Робота с компьютером" width="370" />
-							<div class="work-list work-list--fon">
-								<h3 class="work-list__title">Десктопні додатки</h3>
-							</div>
-						</li>
-						<li class="work-list__item">
-							<img src="./imeges/Foto2.png" alt="Робота с телефоном" width="370" />
-							<div class="work-list work-list--fon">
-								<h3 class="work-list__title">Мобільні додатки</h3>
-							</div>
-						</li>
-						<li class="work-list__item">
-							<img src="./imeges/Foto3.png" alt="Цветовая гамма" width="370" />
-							<div class="work-list work-list--fon">
-								<h3 class="work-list__title">Дизайнерські рішення</h3>
-							</div>
-						</li>
-					</ul>
-				</div>
+			<section class="work ">
+				<h2 class="section-title">Чим ми займаємося</h2>
+				<ul class="work-list">
+					<li class="work-list__item">
+						<img src="./imeges/Foto1.png" alt="Робота с компьютером" width="370" />
+						<div class="work-list work-list--fon">
+							<h3 class="work-list__title">Десктопні додатки</h3>
+						</div>
+					</li>
+					<li class="work-list__item">
+						<img src="./imeges/Foto2.png" alt="Робота с телефоном" width="370" />
+						<div class="work-list work-list--fon">
+							<h3 class="work-list__title">Мобільні додатки</h3>
+						</div>
+					</li>
+					<li class="work-list__item">
+						<img src="./imeges/Foto3.png" alt="Цветовая гамма" width="370" />
+						<div class="work-list work-list--fon">
+							<h3 class="work-list__title">Дизайнерські рішення</h3>
+						</div>
+					</li>
+				</ul>
 			</section>
 			<!-- Комманда компании -->
-			<section class="team">
-				<div class="container">
+			<section class="team team--fon">
+				<div class="team__container ">
 					<h2 class="section-title">Наша команда</h2>
-					<ul class="team-list list">
+					<ul class="team-list">
 						<li class="team-list__item">
 							<img src="./imeges/Igor.jpg" alt="Фото человека " width="270" />
 							<h3 class="team-list__title">Ігор Дем'яненко</h3>
@@ -258,46 +250,44 @@
 			</section>
 			<!-- company -->
 			<section class="company">
-				<div class="container">
-					<h2 class="section-title">Постійні клієнти</h2>
-					<ul class="company-list list">
-						<li class="company-list__item">
-							<a href="" class="company-list__link">
-								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-group"></use></svg>
-							</a>
-						</li>
-						<li class="company-list__item">
-							<a href="" class="company-list__link">
-								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-company"></use></svg>
-							</a>
-						</li>
-						<li class="company-list__item">
-							<a href="" class="company-list__link">
-								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-Object"></use></svg>
-							</a>
-						</li>
-						<li class="company-list__item">
-							<a href="" class="company-list__link">
-								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-forest"></use></svg>
-							</a>
-						</li>
-						<li class="company-list__item">
-							<a href="" class="company-list__link">
-								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-brand"></use></svg>
-							</a>
-						</li>
-						<li class="company-list__item">
-							<a href="" class="company-list__link">
-								<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-tag-line"></use></svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<h2 class="section-title">Постійні клієнти</h2>
+				<ul class="company-list">
+					<li class="company-list__item">
+						<a href="" class="company-list__link">
+							<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-group"></use></svg>
+						</a>
+					</li>
+					<li class="company-list__item">
+						<a href="" class="company-list__link">
+							<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-company"></use></svg>
+						</a>
+					</li>
+					<li class="company-list__item">
+						<a href="" class="company-list__link">
+							<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-Object"></use></svg>
+						</a>
+					</li>
+					<li class="company-list__item">
+						<a href="" class="company-list__link">
+							<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-forest"></use></svg>
+						</a>
+					</li>
+					<li class="company-list__item">
+						<a href="" class="company-list__link">
+							<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-brand"></use></svg>
+						</a>
+					</li>
+					<li class="company-list__item">
+						<a href="" class="company-list__link">
+							<svg class="company-list__icon"><use href="./imeges/symbol-defs.svg#icon-tag-line"></use></svg>
+						</a>
+					</li>
+				</ul>
 			</section>
 		</main>
 		<!-- footer сайта  -->
-		<footer class="footer">
-			<div class="container">
+		<footer class="footer footer--fon">
+			<div class="footer__container">
 				<div class="footer__content">
 					<address class="address">
 						<a href="/" class="logo logo--white">
@@ -305,34 +295,34 @@
 							Studio
 						</a>
 						<p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
-						<ul class="address-list list">
-							<li class="address__item">
-								<a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+						<ul class="address-list">
+							<li class="address-list__item">
+								<a href="mailto:info@devstudio.com" class="address-list__link">info@devstudio.com</a>
 							</li>
-							<li class="address__item"><a href="tel:+380961111111" class="address__link">(096) 111-11-11</a></li>
+							<li class="address-list__item"><a href="tel:+380961111111" class="address-list__link">(096) 111-11-11</a></li>
 						</ul>
 					</address>
 					<div class="socials">
 						<h3 class="socials__title">приєднуйтесь</h3>
-						<ul class="socials-list list">
-							<li class="socials__item">
-								<a href="" class="socials__link">
-									<svg class="socials__icon"><use href="./imeges/symbol-defs.svg#icon-instagram-2"></use></svg>
+						<ul class="socials-list">
+							<li class="socials-list__item">
+								<a href="" class="socials-list__link">
+									<svg class="socials-list__icon"><use href="./imeges/symbol-defs.svg#icon-instagram-2"></use></svg>
 								</a>
 							</li>
-							<li class="socials__item">
-								<a href="" class="socials__link">
-									<svg class="socials__icon"><use href="./imeges/symbol-defs.svg#icon-twitter-1"></use></svg>
+							<li class="socials-list__item">
+								<a href="" class="socials-list__link">
+									<svg class="socials-list__icon"><use href="./imeges/symbol-defs.svg#icon-twitter-1"></use></svg>
 								</a>
 							</li>
-							<li class="socials__item">
-								<a href="" class="socials__link">
-									<svg class="socials__icon"><use href="./imeges/symbol-defs.svg#icon-facebook-1"></use></svg>
+							<li class="socials-list__item">
+								<a href="" class="socials-list__link">
+									<svg class="socials-list__icon"><use href="./imeges/symbol-defs.svg#icon-facebook-1"></use></svg>
 								</a>
 							</li>
-							<li class="socials__item">
-								<a href="" class="socials__link">
-									<svg class="socials__icon"><use href="./imeges/symbol-defs.svg#icon-linkedin-1"></use></svg>
+							<li class="socials-list__item">
+								<a href="" class="socials-list__link">
+									<svg class="socials-list__icon"><use href="./imeges/symbol-defs.svg#icon-linkedin-1"></use></svg>
 								</a>
 							</li>
 						</ul>
@@ -345,7 +335,7 @@
 						</label>
 						<button type="submit" class="form-footer__button button-primary">
 							Підписатися
-							<svg class="form__icon"><use href="./imeges/symbol-defs.svg#icon-send"></use></svg>
+							<svg class="form-footer__icon"><use href="./imeges/symbol-defs.svg#icon-send"></use></svg>
 						</button>
 					</form>
 				</div>
@@ -391,14 +381,14 @@
 
 					<label class="modal__label">
 						Коментар
-						<textarea name="comment" rows="10" placeholder="Введіть текст"></textarea>
+						<textarea class="modal__textarea" name="comment" rows="10" placeholder="Введіть текст"></textarea>
 					</label>
 
-					<label class="checkbox__label">
-						<input class="checkbox__input" type="checkbox" name="agreement" />
-						<span class="checkbox__icon"></span>
+					<label class="modal-checkbox">
+						<input class="modal-checkbox__input" type="checkbox" name="agreement" />
+						<span class="modal-checkbox__icon"></span>
 						Погоджуюся з розсилкою та приймаю
-						<a class="checkbox__link" href="">Умови договору</a>
+						<a class="modal-checkbox__link" href="">Умови договору</a>
 					</label>
 					<button type="submit" class="modal__btn">Відправити</button>
 				</form>

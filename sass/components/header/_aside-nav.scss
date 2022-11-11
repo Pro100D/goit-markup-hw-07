@@ -1,0 +1,45 @@
+.aside {
+	margin-left: auto;
+}
+
+.aside-nav {
+	@extend %list;
+	display: flex;
+
+	&__item:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		color: $primaryTextColor;
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		text-decoration: none;
+
+		transition: color 250ms $timingFunction;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		color: $accentColor;
+	}
+
+	&__link:hover > &__icon,
+	&__link:focus > &__icon {
+		fill: $accentColor;
+	}
+
+	&__icon {
+		fill: $primaryTextColor;
+
+		margin-right: 10px;
+
+		transition: fill 250ms $timingFunction;
+	}
+}
