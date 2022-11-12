@@ -2,6 +2,14 @@ body {
   font-family: roboto, sans-serif;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button-list, .socials-list, .address-list, .company-list, .networks-list, .team-list, .work-list, .feature-list, .aside-nav, .site-nav {
   padding: 0;
   margin: 0;
@@ -22,14 +30,6 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.footer__container, .company, .team__container, .work, .feature, .hero-block, .header__nav {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header--line {
@@ -137,7 +137,7 @@ img {
 .hero {
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero.jpg);
   background-color: #2f303a;
   background-position: center;
   text-align: center;
@@ -266,6 +266,7 @@ img {
 .team--fon {
   background-color: #f5f4fa;
 }
+
 .section-title {
   color: #212121;
   font-size: 36px;

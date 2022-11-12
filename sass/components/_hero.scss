@@ -12,9 +12,8 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	&-block {
-		@extend %container;
-	}
+
+
 	&__title {
 		color: $whiteColor;
 

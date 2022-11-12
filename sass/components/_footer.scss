@@ -6,9 +6,6 @@
 		background-color: #2f303a;
 	}
 
-	&__container {
-		@extend %container;
-	}
 
 	&__content {
 		display: flex;
